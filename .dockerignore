@@ -1,0 +1,9 @@
+.git
+.gitignore
+.env
+__pycache__/
+*.pyc
+.ruff_cache/
+.ipynb_checkpoints/
+app.log
+titanic.ipynb
