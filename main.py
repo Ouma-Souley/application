@@ -1,5 +1,4 @@
 import argparse
-import duckdb
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
