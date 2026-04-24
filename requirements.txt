@@ -3,3 +3,7 @@ scikit-learn
 python-dotenv
 matplotlib
 duckdb
+fastapi
+uvicorn
+skops
+requests
