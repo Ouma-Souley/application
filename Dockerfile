@@ -8,8 +8,13 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY main.py .
+COPY train.py .
 COPY data.csv .
 COPY src ./src
+COPY app ./app
 
-CMD ["python", "main.py"]
+RUN chmod +x ./app/run.sh
+
+EXPOSE 8000
+
+CMD ["bash", "-c", "./app/run.sh"]
